@@ -19,7 +19,7 @@ public void JoinTest()
 }    
 ```
 
-Other example
+Times example
 
 ```C#
 [TestMethod]
@@ -27,9 +27,6 @@ public void TimesTest()
 {
   var result = string.Empty;
   5.Times(f => { result += f.ToString() + " "; });
-  5.Times(() => { System.Console.WriteLine("log"); });
-      
-  Assert.AreEqual(5, 5.Times().Count());
   Assert.AreEqual("1 2 3 4 5 ", result);
 }
 ```
