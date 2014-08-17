@@ -53,6 +53,7 @@
     <Compile Include="RuborIntegerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RuborArrayTests.cs" />
+    <Compile Include="RuborStringTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Rubor\Rubor.csproj">

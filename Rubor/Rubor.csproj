@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\RuborString.cs" />
     <Compile Include="Tools\RuborConsole.cs" />
     <Compile Include="Core\RuborInteger.cs" />
     <Compile Include="Core\RuborObject.cs" />
