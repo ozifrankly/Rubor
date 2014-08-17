@@ -1,6 +1,9 @@
 Rubor
 =====
 
+About
+------
+
 Rubor is a Class library **C# with many Ruby features!** Our Extensions mirror ruby methods. For example, Rubor improve the Array C# with methods like "map", "join" etc!
 
 ```C#
@@ -31,4 +34,6 @@ public void TimesTest()
 }
 ```
 
+Install
+------
 
