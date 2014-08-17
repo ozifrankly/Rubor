@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace Rubor.UnitTests
 {
   [TestClass]
-  public class IntegerTests
+  public class RuborIntegerTests
   {
     [TestMethod]
     public void DownToTest()

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Rubor
 {
-  public static class Integer
+  public static class RuborInteger
   {
     /// <summary>
     /// Delegate  Method
@@ -52,8 +52,8 @@ namespace Rubor
     /// </summary>
     public static void Do(this IEnumerable<int> value, BlockIntParam block)
     {
-      value.ToList().ForEach(e => {
-        block.Invoke(e);
+      value.ToList().ForEach(x => {
+        block.Invoke(x);
       });
     }
 
@@ -71,7 +71,7 @@ namespace Rubor
     /// Iterates the given block int times, passing in values from zero to int - 1.
     /// If no block is given, an Enumerator is returned instead.
     /// </summary>
-    public static void Times(this int value, Rubor.Object.Block block)
+    public static void Times(this int value, Rubor.RuborObject.Block block)
     {
       for (int i = 1; i <= value; i++)
         block.Invoke();

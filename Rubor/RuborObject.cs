@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Rubor
 {
-  public static class Object
+  public static class RuborObject
   {
     public delegate void Block();
+
+
   }
 }
