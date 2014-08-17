@@ -62,5 +62,14 @@ namespace Rubor.UnitTests
       var array = new string[] { "a", "b", "c" }.Join(",");
       Assert.AreEqual("a,b,c", array);
     }
+
+    [TestMethod]
+    public void ShuffleTest()
+    {
+      var array = new string[] { "a", "b", "c" };
+      var shuffle = array.Shuffle();
+
+      Assert.AreNotEqual(array.Join(","), shuffle.Join(","));
+    }
   }
 }

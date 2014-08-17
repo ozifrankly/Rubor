@@ -82,5 +82,14 @@ namespace Rubor.Core
     {
       return values.Aggregate((x, y) => { return x + separator + y; }).ToString();
     }
+
+    /// <summary>
+    /// Returns a new array with elements of self shuffled.
+    /// </summary>
+    public static IEnumerable<object> Shuffle(this IEnumerable<object> values)
+    {
+      var rnd = new Random();
+      return values.OrderBy(item => rnd.Next());
+    }
   }
 }
