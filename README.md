@@ -9,8 +9,9 @@ How to install
 To install Rubor, run the following command in the Package Manager Console
 ```
 PM> Install-Package Rubor
-```
 
+View in Object Browser all Members of Rubor!
+```
 
 More
 ------
