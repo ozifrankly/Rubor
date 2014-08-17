@@ -11,6 +11,7 @@ To install Rubor, run the following command in the Package Manager Console
 PM> Install-Package Rubor
 ```
 
+
 More
 ------
 For example, Rubor improve the Array C# with methods like "map", "join" etc!
