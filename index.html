@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Rubor by ycodeteam</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Rubor</h1>
+        <h2>Rubor - Great features Ruby to C#</h2>
+        <a href="https://github.com/ycodeteam/Rubor" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="rubor" class="anchor" href="#rubor"><span class="octicon octicon-link"></span></a>RUBOR</h1>
+
+<p>Rubor is a Class library <strong>C# with many Ruby features!</strong> Our Extensions mirror ruby methods. For example, Rubor improve the Array C# with methods like "map", "join" etc!</p>
+
+<h2>
+<a name="how-to-install" class="anchor" href="#how-to-install"><span class="octicon octicon-link"></span></a>How to install</h2>
+
+<p>To install Rubor, run the following command in the Package Manager Console</p>
+
+<pre><code>PM&gt; Install-Package Rubor
+</code></pre>
+
+<h2>
+<a name="more" class="anchor" href="#more"><span class="octicon octicon-link"></span></a>More</h2>
+
+<p>For example, Rubor improve the Array C# with methods like "map", "join" etc!</p>
+
+<div class="highlight highlight-C#"><pre><span class="na">[TestMethod]</span>
+<span class="k">public</span> <span class="k">void</span> <span class="nf">MapTest</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="kt">var</span> <span class="n">array</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">string</span><span class="p">[]</span> <span class="p">{</span> <span class="s">"a"</span><span class="p">,</span> <span class="s">"b"</span><span class="p">,</span> <span class="s">"c"</span> <span class="p">}.</span><span class="n">Map</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;{</span> <span class="k">return</span> <span class="n">x</span> <span class="p">+</span> <span class="s">"!"</span><span class="p">;</span> <span class="p">});</span>
+  <span class="n">Assert</span><span class="p">.</span><span class="n">IsTrue</span><span class="p">(</span><span class="k">new</span> <span class="kt">string</span><span class="p">[]</span> <span class="p">{</span> <span class="s">"a!"</span><span class="p">,</span> <span class="s">"b!"</span><span class="p">,</span> <span class="s">"c!"</span> <span class="p">}.</span><span class="n">Eql</span><span class="p">(</span><span class="n">array</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="na">[TestMethod]</span>
+<span class="k">public</span> <span class="k">void</span> <span class="nf">JoinTest</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="kt">var</span> <span class="n">array</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">string</span><span class="p">[]</span> <span class="p">{</span> <span class="s">"a"</span><span class="p">,</span> <span class="s">"b"</span><span class="p">,</span> <span class="s">"c"</span> <span class="p">}.</span><span class="n">Join</span><span class="p">(</span><span class="s">","</span><span class="p">);</span>
+  <span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="s">"a,b,c"</span><span class="p">,</span> <span class="n">array</span><span class="p">);</span>
+<span class="p">}</span>    
+</pre></div>
+
+<p>"Times" is other cool feature</p>
+
+<div class="highlight highlight-C#"><pre><span class="na">[TestMethod]</span>
+<span class="k">public</span> <span class="k">void</span> <span class="nf">TimesTest</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="kt">var</span> <span class="n">result</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
+  <span class="m">5.</span><span class="n">Times</span><span class="p">(</span><span class="n">f</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="n">result</span> <span class="p">+=</span> <span class="n">f</span><span class="p">.</span><span class="n">ToString</span><span class="p">()</span> <span class="p">+</span> <span class="s">" "</span><span class="p">;</span> <span class="p">});</span>
+  <span class="n">Assert</span><span class="p">.</span><span class="n">AreEqual</span><span class="p">(</span><span class="s">"1 2 3 4 5 "</span><span class="p">,</span> <span class="n">result</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/ycodeteam/Rubor/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/ycodeteam/Rubor/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/ycodeteam/Rubor"></a> is maintained by <a href="https://github.com/ycodeteam">ycodeteam</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
