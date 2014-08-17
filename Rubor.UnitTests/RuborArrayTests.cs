@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Rubor;
+using Rubor.Core;
+using Rubor.Tools;
 using System.Linq;
 
 namespace Rubor.UnitTests
@@ -11,30 +12,30 @@ namespace Rubor.UnitTests
     [TestMethod]
     public void EachTests()
     {
-      Rubor.RuborConsole.Clear();
+      RuborConsole.Clear();
       new string[] { "a", "b", "c", "d" }.Each(f =>
       {
-        Rubor.RuborConsole.Write(f + " ");
+        RuborConsole.Write(f + " ");
       });
 
       var array = new string[] { "a", "b", "c", "d" }.Each().Join(",");
 
-      Assert.AreEqual("a b c d ", Rubor.RuborConsole.Output);
+      Assert.AreEqual("a b c d ", RuborConsole.Output);
       Assert.AreEqual("a,b,c,d", array);
     }
 
     [TestMethod]
     public void EachIndexTest()
     {
-      Rubor.RuborConsole.Clear();
+      RuborConsole.Clear();
       new string[] { "a", "b", "c" }.EachIndex((i, f) =>
       {
-        Rubor.RuborConsole.Write(i + " -- ");
+        RuborConsole.Write(i + " -- ");
       });
 
       var array = new string[] { "a", "b", "c", "d" }.EachIndex().Join(",");
       
-      Assert.AreEqual("0 -- 1 -- 2 -- ", Rubor.RuborConsole.Output);
+      Assert.AreEqual("0 -- 1 -- 2 -- ", RuborConsole.Output);
       Assert.AreEqual("a,b,c,d", array);
     }
 
@@ -54,7 +55,7 @@ namespace Rubor.UnitTests
 
       Assert.IsTrue(new string[] { "a!", "b!", "c!" }.Eql(array));
     }
-
+    
     [TestMethod]
     public void JoinTest()
     {

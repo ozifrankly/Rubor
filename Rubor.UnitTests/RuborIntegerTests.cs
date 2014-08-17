@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Rubor;
+using Rubor.Core;
+using Rubor.Tools;
 using System.Linq;
 using System.Collections.Generic;
 
