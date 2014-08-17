@@ -62,7 +62,8 @@ public static void Times(this int value, Rubor.RuborInteger.BlockIntParam block)
     Member of Rubor.RuborInteger
 
 Summary:
-Iterates the given block int times, passing in values from zero to int - 1.  If no block is given, an Enumerator is returned instead.
+Iterates the given block int times, passing in values from zero to int - 1.  
+If no block is given, an Enumerator is returned instead.
 
 ```
 
