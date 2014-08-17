@@ -7,10 +7,7 @@ Rubor - Is a Class Library C# with many features on Ruby language! Our Extension
 [TestMethod]
 public void MapTest()
 {
-  var array = new string[] { "a", "b", "c" }.Map(x =>{
-    return x + "!";
-  });
-
+  var array = new string[] { "a", "b", "c" }.Map(x =>{ return x + "!"; });
   Assert.IsTrue(new string[] { "a!", "b!", "c!" }.Eql(array));
 }
     
