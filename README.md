@@ -1,6 +1,13 @@
 Rubor
 =====
 
+Install
+------
+
+```
+PM> Install-Package Rubor
+```
+
 About
 ------
 
@@ -34,6 +41,4 @@ public void TimesTest()
 }
 ```
 
-Install
-------
 
