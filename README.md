@@ -1,5 +1,3 @@
-![rubor](https://www.dropbox.com/s/gyka76izpmo2p3e/rubor_logo.png)
-
 Rubor
 =====
 Rubor is a Class library **C# with many Ruby features!** Our Extensions mirror ruby methods. For example, Rubor improve the Array C# with methods like "map", "join" etc!
