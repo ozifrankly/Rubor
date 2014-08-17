@@ -29,7 +29,7 @@ public void JoinTest()
 }    
 ```
 
-Times example
+"Times" is other cool feature
 
 ```C#
 [TestMethod]
