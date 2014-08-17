@@ -80,10 +80,7 @@ namespace Rubor
     /// </summary>
     public static string Join(this IEnumerable<object> values, string separator)
     {
-      return values.Aggregate((x, y) =>
-      {
-        return x + separator + y;
-      }).ToString();
+      return values.Aggregate((x, y) => { return x + separator + y; }).ToString();
     }
   }
 }
