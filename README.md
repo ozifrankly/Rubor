@@ -6,7 +6,7 @@ RUBOR
 
 How to install
 ------
-To install Rubor, run the following command in the Package Manager Console
+To install Rubor, run the following command in the 
 [Package Manager Console](https://www.nuget.org/packages/Rubor/)
 ```
 PM> Install-Package Rubor
