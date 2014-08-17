@@ -1,6 +1,8 @@
 RUBOR
 =====
-Rubor is a Class library **C# with many Ruby features!** Our Extensions mirror ruby methods. For example, Rubor improve the Array C# with methods like "map", "join" etc!
+![rubor_logo](http://ycodeteam.github.io/Rubor/images/rubor_logo.png)
+
+>Rubor is a Class library **C# with many Ruby features!** Our Extensions mirror ruby methods. For example, Rubor improve >the Array C# with methods like "map", "join" etc!
 
 How to install
 ------
@@ -39,6 +41,14 @@ public void TimesTest()
   5.Times(f => { result += f.ToString() + " "; });
   Assert.AreEqual("1 2 3 4 5 ", result);
 }
+
+//Object Browser
+public static void Times(this int value, Rubor.RuborInteger.BlockIntParam block)
+    Member of Rubor.RuborInteger
+
+Summary:
+Iterates the given block int times, passing in values from zero to int - 1.  If no block is given, an Enumerator is returned instead.
+
 ```
 
 
