@@ -4,7 +4,7 @@ RUBOR
 
 >Rubor is a Class library **C# with many Ruby features!** Our Extensions mirror ruby methods. For example, Rubor improve >the Array C# with methods like "map", "join" etc!
 
-How to install
+How To Install
 ------
 To install Rubor, run the following command in the 
 [Package Manager Console](https://www.nuget.org/packages/Rubor/)
@@ -26,8 +26,16 @@ View in Object Browser all Members of Rubor!
   
 ```
 
-More
+How To Use
 ------
+
+Import Rubor in your class
+
+```C#
+using Rubor.Core
+using Rubor.Objects
+```
+
 For example, Rubor improve the Array C# with methods like "map", "join" etc!
 
 ```C#
