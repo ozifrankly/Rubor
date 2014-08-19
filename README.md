@@ -58,9 +58,31 @@ using Rubor.Core
 using Rubor.Objects
 ```
 
-For example, Rubor improve the Array C# with methods like "map", "join" etc!
+Rubor improve the Array C# with methods like "map", "join" etc! See some examples
 
 ```C#
+
+// Map
+new string[] { "a", "b", "c" }.Map(x =>{ return x + "!"; });
+
+// Eql
+new string[] { "a!", "b!", "c!" }.Eql(array)
+
+// Join
+new string[] { "a", "b", "c" }.Join(",");
+
+// Times
+5.Times(x => { Console.Write(x); });
+
+// Range
+"1..10".Range().Begin();
+
+```
+
+Testing with Rubor
+
+```C#
+
 [TestMethod]
 public void MapTest()
 {
@@ -74,11 +96,7 @@ public void JoinTest()
   var array = new string[] { "a", "b", "c" }.Join(",");
   Assert.AreEqual("a,b,c", array);
 }    
-```
 
-"Times" is other cool feature
-
-```C#
 [TestMethod]
 public void TimesTest()
 {
