@@ -1,4 +1,7 @@
-﻿using System.Globalization;
+﻿using System.Linq;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using System;
 
 namespace Rubor.Core
 {
@@ -49,6 +52,16 @@ namespace Rubor.Core
     public static string UpCase(this string value)
     {
       return value.ToUpper();
+    }
+
+    /// <summary>
+    /// Returns a new string with the characters from str in reverse order.
+    /// </summary>
+    public static string Reverse(this string value)
+    {
+      var array = value.ToList().ToArray();
+      Array.Reverse(array);
+      return new string(array);
     }
   }
 }

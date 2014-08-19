@@ -46,5 +46,11 @@ namespace Rubor.UnitTests
     {
       Assert.AreEqual("TEST","test".UpCase());
     }
+
+    [TestMethod]
+    public void ReverseTest()
+    {
+      Assert.AreEqual("uoiea", "aeiou".Reverse());
+    }
   }
 }

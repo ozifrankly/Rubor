@@ -35,7 +35,9 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\RuborRange.cs" />
     <Compile Include="Core\RuborString.cs" />
+    <Compile Include="Objects\Range.cs" />
     <Compile Include="Tools\RuborConsole.cs" />
     <Compile Include="Core\RuborInteger.cs" />
     <Compile Include="Core\RuborObject.cs" />
