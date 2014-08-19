@@ -12,7 +12,11 @@ To install Rubor, run the following command in the
 PM> Install-Package Rubor
 ```
 
+Members Of Rubor
+------
+
 View in Object Browser all Members of Rubor!
+
 ```
 + Rubor
     + Core
@@ -26,6 +30,22 @@ View in Object Browser all Members of Rubor!
     + Tools
         RuborConsole.cs
         ...
+```
+
+See the Object Browser example
+
+```C#
+//Class
+Rubor.Core.RuborInteger
+
+//Object Browser
+public static void Times(this int value, Rubor.RuborInteger.BlockIntParam block)
+    Member of Rubor.RuborInteger
+
+Summary:
+Iterates the given block int times, passing in values from zero to int - 1.  
+If no block is given, an Enumerator is returned instead.
+
 ```
 
 How To Use
@@ -66,14 +86,6 @@ public void TimesTest()
   5.Times(f => { result += f.ToString() + " "; });
   Assert.AreEqual("1 2 3 4 5 ", result);
 }
-
-//Object Browser
-public static void Times(this int value, Rubor.RuborInteger.BlockIntParam block)
-    Member of Rubor.RuborInteger
-
-Summary:
-Iterates the given block int times, passing in values from zero to int - 1.  
-If no block is given, an Enumerator is returned instead.
 
 ```
 
