@@ -18,12 +18,14 @@ View in Object Browser all Members of Rubor!
     + Core
         RuborArray.cs
         RuborInteger.cs
-        ***
-        
-   + Tools
+        RuborRange.cs
+        ...
+    + Objects
+        Range
+        ...
+    + Tools
         RuborConsole.cs
-        ***
-  
+        ...
 ```
 
 How To Use
