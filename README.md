@@ -50,14 +50,12 @@ If no block is given, an Enumerator is returned instead.
 
 How To Use
 ------
-
 Import Rubor in your class
 
 ```C#
 using Rubor.Core
 using Rubor.Objects
 ```
-
 Rubor improve the Array C# with methods like "map", "join" etc! See some examples
 
 ```C#
@@ -66,7 +64,7 @@ Rubor improve the Array C# with methods like "map", "join" etc! See some example
 new string[] { "a", "b", "c" }.Map(x =>{ return x + "!"; });
 
 // Eql
-new string[] { "a!", "b!", "c!" }.Eql(array)
+new string[] { "a!", "b!", "c!" }.Eql(array);
 
 // Join
 new string[] { "a", "b", "c" }.Join(",");
@@ -78,7 +76,6 @@ new string[] { "a", "b", "c" }.Join(",");
 "1..10".Range().Begin();
 
 ```
-
 Testing with Rubor
 
 ```C#
