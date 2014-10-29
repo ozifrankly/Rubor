@@ -71,5 +71,13 @@ namespace Rubor.UnitTests
 
       Assert.AreNotEqual(array.Join(","), shuffle.Join(","));
     }
+
+	[TestMethod]
+	public void CompactTest()
+	{
+	   var array = new string[] { "a", null, "b", null, "c" };
+	   var compacted = array.Compact();
+	   Assert.AreEqual ("a,b,c", compacted);
+	}
   }
 }

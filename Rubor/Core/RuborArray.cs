@@ -20,7 +20,7 @@ namespace Rubor.Core
         yield return value;
     }
 
-    /// <summary>
+	/// <summary>
     /// Same as #each, but passes the index of the element instead of the element itself.
     /// An Enumerator is returned if no block is given.
     /// </summary>
@@ -89,5 +89,17 @@ namespace Rubor.Core
       var rnd = new Random();
       return values.OrderBy(item => rnd.Next());
     }
+
+    /// <summary>
+    /// Return a new array without null elements.
+    /// </summary>
+    public static IEnumerable<object> Compactt(this IEnumerable<object> values)
+    {
+       foreach (var value in values)
+       {
+	      if (value != null)
+             yield return value;
+       }
+     }
   }
 }
